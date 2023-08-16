@@ -1,0 +1,104 @@
+:root {
+  --red-color: #ef4b4c;
+}
+
+body,
+html {
+  height: 90%;
+  background-color: #2a3950;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.125rem;
+}
+
+.menu__item {
+  font-size: 1.125em;
+  padding: 0 1.12em 0;
+}
+
+.menu__item a {
+  color: #e9e9eb;
+}
+
+.menu__item .home-link {
+  color: var(--red-color);
+}
+
+.home__main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.home__main-card {
+  width: 25vw; /* 25% da largura da janela de visualização */
+  height: 50vh; /* 50% da altura da janela de visualização */
+  border-radius: 20px;
+  background-color: #42506b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.home__main-avatar {
+  width: 18.125rem;
+  height: 18.125rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2.5rem;
+}
+
+.home__main-title {
+  color: #e9e9eb;
+}
+
+.home__main-subtitle {
+  color: var(--red-color);
+}
+
+.home__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__contact-button {
+  position: relative;
+  color: var(--red-color);
+  font-size: 18px;
+  border: 2px solid var(--red-color);
+  border-radius: 15px;
+  padding: 1em 2em;
+  overflow: hidden;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.home__contact-button::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #42506b, #3e619b);
+  z-index: -1;
+  border-radius: inherit;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.home__contact-button:hover {
+  background-color: transparent; /* torna o fundo transparente para revelar o gradiente */
+  color: var(--red-color);
+}
+
+.home__contact-button:hover::before {
+  transform: scale(1); /* Exibe o pseudo-elemento gradient no hover */
+}

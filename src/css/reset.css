@@ -1,0 +1,90 @@
+/* Remover margens e padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+variable,
+form,
+fieldset,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remover marcadores de lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Definir a base do line-height */
+body {
+  line-height: 1;
+}
+
+/* Remover sublinhados de links */
+a {
+  text-decoration: none;
+}
+
+/* Remover bordas em imagens quando elas estão dentro de um link */
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+/* Remover bordas em tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Definir base do font-size */
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+/* Remover borda em botões e inputs ao focar (frequentemente usado por navegadores como o Chrome) */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Resetar aparência de botões e inputs em diferentes navegadores */
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+/* Resetar padding em fieldsets */
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/* Resetar cor de texto e fundo */
+body {
+  background: none;
+  color: inherit;
+}
