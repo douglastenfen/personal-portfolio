@@ -24,11 +24,11 @@ html {
   color: #e9e9eb;
 }
 
-.menu__item .home-link {
+.menu__item .selected-link {
   color: var(--red-color);
 }
 
-.home__main-content {
+.page-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,17 +58,17 @@ html {
   color: #e9e9eb;
 }
 
-.home__main-subtitle {
+.highlight {
   color: var(--red-color);
 }
 
-.home__footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.home__contact-button {
+.contact-button {
   position: relative;
   color: var(--red-color);
   font-size: 18px;
@@ -80,7 +80,7 @@ html {
   z-index: 1;
 }
 
-.home__contact-button::before {
+.contact-button::before {
   content: '';
   position: absolute;
   top: -2px;
@@ -94,11 +94,40 @@ html {
   transition: transform 0.3s;
 }
 
-.home__contact-button:hover {
-  background-color: transparent; /* torna o fundo transparente para revelar o gradiente */
+.contact-button:hover {
+  background-color: transparent;
   color: var(--red-color);
 }
 
-.home__contact-button:hover::before {
-  transform: scale(1); /* Exibe o pseudo-elemento gradient no hover */
+.contact-button:hover::before {
+  transform: scale(1);
+}
+
+/* About Page CSS */
+
+.about-avatar {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2.5rem;
+}
+
+.about-card {
+  width: 25vw; /* 25% da largura da janela de visualização */
+  height: 50vh; /* 50% da altura da janela de visualização */
+  border-radius: 20px;
+  background-color: #42506b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-card p {
+  color: #e9e9eb;
+  text-align: center;
+  padding: 1em;
+  font-size: 16px;
+  line-height: 1.3;
 }
