@@ -14,10 +14,10 @@ A personal portfolio built for a college project for the subject of Web Developm
 
 ## Requirements ✅
 
-- [ ] An About Me link
+- [x] An About Me link
 
-- [ ] A link About my educational background
+- [x] A link About my educational background
 
-- [ ] A link to my portfolio
+- [x] A link to my portfolio
 
-- [ ] A contact link (use form)
+- [x] A contact link (use form)
