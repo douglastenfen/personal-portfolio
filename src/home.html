@@ -3,40 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="../public/favicon.ico"
     />
     <title>Douglas Tenfen's Portfolio</title>
   </head>
   <body>
     <header>
       <nav class="menu" aria-label="Main Menu">
-        <ul>
-          <li class="menu__item"><a class="selected-link" href="#">Home</a></li>
+        <ul class="flex-center">
+          <li class="menu__item">
+            <a class="selected-link" href="home.html">Home</a>
+          </li>
           <li class="menu__item"><a href="pages/about.html">About</a></li>
-          <li class="menu__item"><a href="#">Resume</a></li>
-          <li class="menu__item"><a href="#">Portfolio</a></li>
+          <li class="menu__item">
+            <a href="pages/education.html">Education</a>
+          </li>
+          <li class="menu__item">
+            <a href="pages/portfolio.html">Portfolio</a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <main class="page-content">
-      <div class="home__main-card">
+      <div class="card">
         <img
-          class="home__main-avatar"
+          class="avatar"
           src="../public/avatar.jpg"
           alt="Douglas Tenfen avatar"
         />
-        <h1 class="home__main-title">Douglas Tenfen de Oliveira</h1>
+        <h1>Douglas Tenfen de Oliveira</h1>
         <h2 class="highlight">Full Stack Developer</h2>
       </div>
     </main>
+
     <footer>
-      <button class="contact-button">Contact Me</button>
+      <a href="pages/contact.html" class="contact-link">Contact Me</a>
     </footer>
   </body>
 </html>
